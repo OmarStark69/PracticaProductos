@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fondo"
+    tools:context=".UploadFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_detalles"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/guide_vert_left"
+        app:layout_constraintTop_toTopOf="@+id/guide_top" />
+
+    <TextView
+        android:id="@+id/text_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_goneMarginStart="15dp"
+        android:text="@string/texto_nombre"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/guide_vert_left"
+        app:layout_constraintTop_toBottomOf="@id/guide_content_upper" />
+
+    <EditText
+        android:id="@+id/edit_nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="08dp"
+        android:hint="@string/texto_ingrese_nombre"
+        android:background="@drawable/round_border"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="12dp"
+        android:textColorHint="#00796B"
+        app:layout_constraintLeft_toRightOf="@id/guide_vert_left"
+        app:layout_constraintRight_toLeftOf="@id/guide_vert_right"
+        app:layout_constraintTop_toBottomOf="@id/text_nombre"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:id='@+id/text_talla'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_goneMarginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/texto_talla"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/guide_vert_left"
+        app:layout_constraintTop_toBottomOf="@id/edit_nombre" />
+
+    <EditText
+        android:id="@+id/edit_talla"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:drawablePadding="08dp"
+        android:hint="@string/texto_ingrese_talla"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="12dp"
+        android:textColorHint="#00796B"
+        app:layout_constraintLeft_toRightOf="@id/guide_vert_left"
+        app:layout_constraintRight_toLeftOf="@id/guide_vert_right"
+        app:layout_constraintTop_toBottomOf="@id/text_talla"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:id='@+id/text_color'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_goneMarginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/texto_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/guide_vert_left"
+        app:layout_constraintTop_toBottomOf="@id/edit_talla" />
+
+    <EditText
+        android:id="@+id/edit_color"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:drawablePadding="08dp"
+        android:hint="@string/texto_ingrese_color"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="12dp"
+        android:textColorHint="#00796B"
+        app:layout_constraintLeft_toRightOf="@id/guide_vert_left"
+        app:layout_constraintRight_toLeftOf="@id/guide_vert_right"
+
+        app:layout_constraintTop_toBottomOf="@id/text_color"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:id='@+id/text_precio'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_goneMarginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/texto_precio"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/guide_vert_left"
+        app:layout_constraintTop_toBottomOf="@id/edit_color" />
+
+    <EditText
+        android:id="@+id/edit_precio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:drawablePadding="08dp"
+        android:hint="@string/texto_ingrese_precio"
+        android:inputType="numberDecimal"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="12dp"
+        android:textColorHint="#00796B"
+        app:layout_constraintLeft_toRightOf="@id/guide_vert_left"
+        app:layout_constraintRight_toLeftOf="@id/guide_vert_right"
+
+        app:layout_constraintTop_toBottomOf="@id/text_precio"
+        tools:ignore="Autofill" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_vert_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_vert_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_content_upper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_content_lower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <Button
+        android:id="@+id/button_enviar"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bg"
+        android:text="@string/subir_datos"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintEnd_toStartOf="@+id/guide_vert_right"
+        app:layout_constraintStart_toStartOf="@+id/guide_vert_left"
+        app:layout_constraintTop_toTopOf="@+id/guide_content_lower" />
+
+    <Button
+        android:id="@+id/button_ver_productos"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/round_bg"
+        android:text="@string/ver_productos"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintEnd_toStartOf="@+id/guide_vert_right"
+        app:layout_constraintStart_toStartOf="@+id/guide_vert_left"
+        app:layout_constraintTop_toBottomOf="@id/button_enviar" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
